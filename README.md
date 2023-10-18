@@ -14,7 +14,6 @@ My Counter App is a simple web application for counting numbers and displaying e
 - React for the frontend.
 - Styled-components for styling.
 - React-icons for icons.
-- React-toastify for displaying notifications.
 
 ## Installation
 
@@ -24,3 +23,18 @@ To run this project locally, follow these steps:
 
    ```bash
    git clone https://github.com/yourusername/my-counter-app.git
+
+2. Navigate to the project folder:
+
+    ```bash
+    cd my-counter-app
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
