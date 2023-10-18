@@ -15,7 +15,7 @@ const BackgroundMusicContainer = styled.div`
 
   @media (max-width: 768px) {
     font-size: 12px;
-    margin-bottom: 35px;
+    width: 25%;
   }
 `;
 

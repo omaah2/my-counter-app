@@ -29,6 +29,9 @@ const AnimatedCounter = styled.h1`
       color: #9d39a8;
     }
   }
+  @media (max-width: 768px) {
+    padding-right:45px;
+  }
 `;
 
 

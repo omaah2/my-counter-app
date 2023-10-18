@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const StyledCounter = styled.div`
-  background: linear-gradient(to bottom, #cf4bde, #fff);
+  background: linear-gradient(to bottom, #652b6b, #d540e6);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,12 +64,16 @@ const mobileBreakpoint = "768px";
 export const ResponsiveContainer = styled(Container)`
   @media (max-width: ${mobileBreakpoint}) {
     background-color: #f0f0f0;
+
   }
 `;
 export const ResponsiveStyledCounter = styled(StyledCounter)`
   @media (max-width: ${mobileBreakpoint}) {
-    width: 80vh;
-    height: 250vh;
+    width: 100%;
+    height: auto;
+    padding-bottom: 0;
+    padding:none;
+
   }
 `;
 
