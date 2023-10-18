@@ -88,8 +88,8 @@ const EducationalFactsContainer = styled.div`
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 
   @media (max-width: 768px) {
-    width: 70%; /* Adjust the width for smaller screens */
-    margin: 0 auto; /* Center the component */
+    width: 70%;
+    margin: 0 auto;
   }
 `;
 
@@ -98,8 +98,25 @@ const Icon = styled(FaInfoCircle)`
   margin-right: 0.5rem;
 `;
 
+const FactText = styled.p`
+  /* Define a text animation using keyframes */
+  animation: textAnimation 4s alternate infinite;
+
+  @keyframes textAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+`;
+
 const FactButton = styled(Button)`
-  background: linear-gradient(to bottom, #ff6600, #ff9900);
+  background: linear-gradient(to bottom, #c376cc, #5b1363);
   color: white;
   border: none;
   border-radius: 5px;
@@ -107,7 +124,7 @@ const FactButton = styled(Button)`
   cursor: pointer;
 
   &:hover {
-    background: linear-gradient(to bottom, #cc3300, #ff6600);
+    background: linear-gradient(to bottom, #fff, #b728c7);
   }
 `;
 
@@ -125,7 +142,7 @@ const EducationalFacts = () => {
     <EducationalFactsContainer>
       <Icon />
       <h1>Educational Facts</h1>
-      <p>{fact}</p>
+      <FactText>{fact}</FactText> {/* Apply the animation to the text */}
       <FactButton onClick={changeFact}>Next Fact</FactButton>
     </EducationalFactsContainer>
   );

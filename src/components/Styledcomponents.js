@@ -10,17 +10,16 @@ export const Container = styled.div`
 `;
 
 export const StyledCounter = styled.div`
-  background-image: url("https://images.pexels.com/photos/396547/pexels-photo-396547.jpeg?auto=compress&cs=tinysrgb&w=600");
-  background-size: cover;
+  background: linear-gradient(to bottom, #cf4bde, #fff);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 68rem;
+  width: 300%;
   height: auto;
   font-family: Cursive;
   padding: 0.5rem;
-
+  padding-bottom: 5rem;
 `;
 
 export const CounterButtons = styled.div`
@@ -35,14 +34,14 @@ export const Button = styled.button`
   margin: 1rem;
   padding: 0.5rem 1rem;
   border: none;
-  background: linear-gradient(to bottom, #c0c0c0, #fff);
+  background: linear-gradient(to bottom, #c376cc, #5b1363);
   color: white;
   border-radius: 5px;
   cursor: pointer;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 
   &:hover {
-    background: linear-gradient(to bottom, #333, #000);
+    background: linear-gradient(to bottom, #fff, #c96ed4);
   }
 `;
 

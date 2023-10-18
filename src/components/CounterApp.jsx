@@ -7,17 +7,32 @@ import {
   ResponsiveContainer,
   ResponsiveStyledCounter,
   ResponsiveButton,
-} from "./Styledcomponents";
+} from "./Styledcomponents"; // Make sure to adjust the import path based on your folder structure
 import { FaPlus, FaMinus } from "react-icons/fa";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import gsap from "gsap";
-import { SplitText } from "gsap-trial/SplitText";
 import BackgroundMusic from "./BackgroundMusic"; // Import BackgroundMusic component
 import EducationalFacts from "./EducationalFacts";
+import styled from "styled-components"; // Import styled from styled-components
 
-gsap.registerPlugin(SplitText);
-function CounterApp() {
+const AnimatedCounter = styled.h1`
+  color: #fff; /* Initial color */
+  text-shadow: 2px 2px 4px #000; /* Optional text shadow */
+  margin: 2;
+  animation: colorChange 2s alternate infinite; /* Animation duration and properties */
+  @keyframes colorChange {
+    0% {
+      color: #fff; /* Initial color */
+    }
+    100% {
+      color: #9d39a8;
+    }
+  }
+`;
+
+
+const CounterApp = () => {
   const [count, setCount] = useState(0);
   const [loading, setLoading] = useState(false);
 
@@ -35,36 +50,17 @@ function CounterApp() {
   };
 
   useEffect(() => {
-    gsap.to(".container", {
-      rotation: 360,
-      duration: 5,
-      ease: "linear",
-    });
-
-    const tl = gsap.timeline({ repeat: -1 });
-    const split = new SplitText("h1", { type: "chars, words" });
-    const chars = split.chars;
-
-    tl.set(chars, { color: "random([#fff,  #808080, #C0C0C0])" }, 2);
-
-    tl.from(chars, {
-      opacity: 0,
-      duration: 0.1,
-      stagger: 0.1,
-    });
-
-    tl.to(chars, {
-      duration: 0.5,
-      opacity: 0,
-      stagger: 0.05,
-      ease: "power4.inOut",
-    });
+      gsap.to(".container", {
+        rotation: 360,
+        duration: 5,
+        ease: "linear",
+      });
   }, []);
 
   return (
     <ResponsiveContainer>
-      <ResponsiveStyledCounter >
-        <h1>Counter</h1>
+      <ResponsiveStyledCounter>
+        <AnimatedCounter>Counter</AnimatedCounter>
         <Container className="container">
           <CounterButtons>
             <ResponsiveButton onClick={decrement}>
@@ -95,6 +91,6 @@ function CounterApp() {
       </ResponsiveStyledCounter>
     </ResponsiveContainer>
   );
-}
+};
 
 export default CounterApp;
