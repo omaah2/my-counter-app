@@ -11,11 +11,12 @@ export const Container = styled.div`
 
 export const StyledCounter = styled.div`
   background-image: url("https://images.pexels.com/photos/396547/pexels-photo-396547.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 250vh;
+  width: 68rem;
   height: auto;
   font-family: Cursive;
   padding: 0.5rem;

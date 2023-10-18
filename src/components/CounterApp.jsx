@@ -63,7 +63,7 @@ function CounterApp() {
 
   return (
     <ResponsiveContainer>
-      <ResponsiveStyledCounter>
+      <ResponsiveStyledCounter >
         <h1>Counter</h1>
         <Container className="container">
           <CounterButtons>
