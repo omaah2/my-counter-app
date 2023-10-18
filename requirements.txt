@@ -1,0 +1,7 @@
+react
+react-dom
+react-icons
+react-spinners
+react-toastify
+styled-components
+react-router-dom
