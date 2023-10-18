@@ -7,15 +7,14 @@ import {
   ResponsiveContainer,
   ResponsiveStyledCounter,
   ResponsiveButton,
-} from "../Styledcomponents";
+} from "./Styledcomponents";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import gsap from "gsap";
 import { SplitText } from "gsap-trial/SplitText";
 import BackgroundMusic from "./BackgroundMusic"; // Import BackgroundMusic component
-import EducationalFacts from "./EducationalFacts"; 
-
+import EducationalFacts from "./EducationalFacts";
 
 gsap.registerPlugin(SplitText);
 function CounterApp() {

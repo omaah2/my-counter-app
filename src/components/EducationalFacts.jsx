@@ -64,7 +64,7 @@
 // export default EducationalFacts;
 
 import { useState } from "react";
-import { Button } from "../Styledcomponents";
+import { Button } from "./Styledcomponents";
 import styled from "styled-components";
 import { FaInfoCircle } from "react-icons/fa";
 

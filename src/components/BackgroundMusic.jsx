@@ -1,5 +1,5 @@
-import React , { useState } from "react";
-import { Button } from "../Styledcomponents"; // Import your styled-components
+import React, { useState } from "react";
+import { Button } from "./Styledcomponents"; // Import your styled-components
 import styled from "styled-components"; // Import styled from styled-components
 import { FaMusic } from "react-icons/fa"; // Import the Music icon from react-icons/fa
 
