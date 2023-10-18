@@ -17,7 +17,7 @@ export const StyledCounter = styled.div`
   justify-content: center;
   width: 300%;
   height: auto;
-  font-family: Cursive;
+  font-family: Times-Italic;
   padding: 0.5rem;
   padding-bottom: 5rem;
 `;
